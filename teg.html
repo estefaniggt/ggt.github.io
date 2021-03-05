@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="teg.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="teg.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Fredoka+One&family=Rokkitt:wght@500;900&family=Russo+One&display=swap" rel="stylesheet">
+
+</head>
+<body> 
+    
+    <header>
+       <div class="wrapper">
+        <div class="logo">
+                TORBELLINO
+        </div>
+        <nav>
+            
+            <a href="#">Encargados</a>
+            <a href="#">Personal</a>
+            <a href="#">Evaluacion</a>
+            <a href="#">Historial</a>
+            
+        </nav>
+        
+    </div>
+    </header>
+
+    <h2> TEST DE EVALUACIÓN DEL DESEMPEÑO LABORAL </h2>
+    
+    <section class="contenido wrapper">
+        <form name="test" onsubmit="return verificarRespuestas()">
+        
+        <div id="resultado"></div>
+
+        <br>
+        <h3>1. ¿Al empleado se le dificulta trabajar en equipo?</h3>
+        <br>
+        <input type="radio" name="p1" value="a">a. Estoy en desacuerdo<br>
+        <input type="radio" name="p1" value="b">b.  Neutro<br>
+        <input type="radio" name="p1" value="c">c. Estoy de acuerdo<br>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>2. ¿El empleado da lo mejor de si en cada actividad realizada?</h3>
+        <br>
+        <input type="radio" name="p2" value="a">a. Estoy en desacuerdo<br>
+        <input type="radio" name="p2" value="b">b.  Neutro<br>
+        <input type="radio" name="p2" value="c">c. Estoy de acuerdo<br>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>3. ¿Establece y mantiene comunicación con usuarios, compañeros, colaboradores y superiores proporcionando un ambiente laboral de cordialidad y respeto?</h3>
+        <br>
+        <input type="radio" name="p3" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p3" value="b">b.  Neutro<br/>
+        <input type="radio" name="p3" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>4. ¿Cumple con las normativas de la empresa?</h3>
+        <br>
+        <input type="radio" name="p4" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p4" value="b">b.  Neutro<br/>
+        <input type="radio" name="p4" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>5. ¿Realiza sus trabajos de acuerdo con los requerimientos en terminos de contenido, exactitud, presentación y atenciñon?</h3>
+        <br>
+        <input type="radio" name="p5" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p5" value="b">b.  Neutro<br/>
+        <input type="radio" name="p5" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>6. ¿Entrega los trabajos de acuerdo con la programación previamente establecida?</h3>
+        <br>
+        <input type="radio" name="p6" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p6" value="b">b.  Neutro<br/>
+        <input type="radio" name="p6" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>7. ¿Realiza las funciones y deberes propios del cargo sin que requiera de supervisión y control permanente y asumiendo las consecuencias que se derivan de su trabajo?</h3>
+        <br>
+        <input type="radio" name="p7" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p7" value="b">b.  Neutro<br/>
+        <input type="radio" name="p7" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>8. ¿Asume y transmite el conjunto de valores organizacionales?</h3>
+        <br>
+        <input type="radio" name="p8" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p8" value="b">b.  Neutro<br/>
+        <input type="radio" name="p8" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>9. ¿Resuelve los imprevistos de su trabajo y mejora los procedimientos?</h3>
+        <br>
+        <input type="radio" name="p9" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p9" value="b">b.  Neutro<br/>
+        <input type="radio" name="p9" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>10. ¿Genera credibilidad y confianza frente al manejo de la información y en la ejecución de actividades?</h3>
+        <br>
+        <input type="radio" name="p10" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p10" value="b">b.  Neutro<br/>
+        <input type="radio" name="p10" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>11. ¿Coopera con los compañeros en las labores de la dependencia y de la entidad?</h3>
+        <br>
+        <input type="radio" name="p11" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p11" value="b">b.  Neutro<br/>
+        <input type="radio" name="p11" value="c">c. Estoy de acuerdo<br/>
+        <br>
+
+        <hr>
+
+        <br>
+        <h3>12. ¿Emplea de manera correcta los equipos y elementos dispuestos para el desempeño de sus funciones?</h3>
+        <br>
+        <input type="radio" name="p12" value="a">a. Estoy en desacuerdo<br/>
+        <input type="radio" name="p12" value="b">b.  Neutro<br/>
+        <input type="radio" name="p12" value="c">c. Estoy de acuerdo<br/>
+
+        <input type="submit" value="Enviar">
+    </form>
+    </section>
+
+</body>
+</html>
